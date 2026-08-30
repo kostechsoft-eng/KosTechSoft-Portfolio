@@ -66,7 +66,7 @@ function Home() {
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
 
               <a
-                href="#projects"
+                href="/projects"
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition hover:bg-white/90"
               >
                 View Our Work
@@ -77,7 +77,7 @@ function Home() {
               </a>
 
               <a
-                href="#contact"
+                href="/contact"
                 className="group inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/[0.08]"
               >
                 Start a Project

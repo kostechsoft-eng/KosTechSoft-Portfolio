@@ -54,7 +54,7 @@ export const projects = [
     ],
 
     liveUrl:
-      "https://bagh-one-restaurant.vercel.app/",
+      "https://restaurant-demo-mu-murex.vercel.app",
   },
 
   {
