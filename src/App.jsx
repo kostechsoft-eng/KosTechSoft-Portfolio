@@ -13,6 +13,12 @@ import Contact from "./pages/Contact";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 
+import CADProjectDetails from "./pages/CADProjectDetails";
+import AutoCADProjectDetails from "./pages/AutoCADProjectDetails";
+
+import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,21 +28,43 @@ function App() {
         <Navbar />
 
         <Routes>
+          {/* Main Pages */}
           <Route path="/" element={<Home />} />
-
           <Route path="/about" element={<About />} />
-
           <Route path="/services" element={<Services />} />
-
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
 
+          {/* Web Projects */}
           <Route
             path="/projects/:projectId"
             element={<ProjectDetails />}
           />
 
-          <Route path="/contact" element={<Contact />} />
+          {/* SolidWorks / CAD */}
+          <Route
+            path="/projects/cad/:projectId"
+            element={<CADProjectDetails />}
+          />
 
+          {/* AutoCAD */}
+          <Route
+            path="/projects/cad/autocad/:projectId"
+            element={<AutoCADProjectDetails />}
+          />
+
+          {/* Products */}
+          <Route
+            path="/products"
+            element={<Products />}
+          />
+
+          <Route
+            path="/products/:productId"
+            element={<ProductDetails />}
+          />
+
+          {/* Legal */}
           <Route
             path="/privacy-policy"
             element={<PrivacyPolicy />}
